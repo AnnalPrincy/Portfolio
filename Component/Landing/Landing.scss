@@ -1,0 +1,186 @@
+.landing{
+    // background-color: crimson;
+    .inner{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+
+        .landing_left{
+            width: 50%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h1{
+                font-size: 25px;
+                margin-bottom: 100px;
+                span{
+                    font-size: 50px;
+                    color: crimson;
+                }
+
+            }
+            
+            .btn{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+
+                button{
+                    padding: 10px 30px;
+                    border-radius: 25px;
+                    border: none;
+                    background-color: crimson;
+                    color: white;
+                    font-size: 15px;
+                    align-content: flex-end !important; 
+                    display: inline-block;
+    
+                }
+            }
+        }
+
+        .landing_right{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .total_img{
+                height: 550px;
+                width: 300px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+
+                img{
+                    height: 102%;
+                    width: 100%;
+                    position: relative;
+                    z-index: 50;
+    
+                }
+                .inner_img{
+                    height: 100%;
+                    width: 83%;
+                    background-color: black;
+                    position: absolute;
+                    top: 0;
+                    z-index: 30;
+                    border-radius: 25px;
+
+                    img{
+                        position: relative;
+                        height: 10%;
+                        width: 100%;
+                        top: 13px;
+                    }
+
+                    .profile{
+                        background-color: black;
+                        display: flex;
+                        align-items: center;
+                        justify-content:flex-start;
+                        padding-left: 5%;
+                        height: 8%;
+                        width: 100%;
+
+                        .round{
+                            height: 50%;
+                            width: 10%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+
+                            img{
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 50%;
+                                position: relative;
+                                top: 0;
+                            
+                                
+                            }
+
+
+                        }
+                        .Name{
+                            color: white;
+                            font-weight: 400;
+                            padding-left: 10px;
+                            font-size: 12px;
+                        }
+                    }
+                    .my_profile{
+                        height: 62%;
+                        width: 100%;
+                        background-color: black;
+
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .bottom{
+                        height: 10%;
+                        width: 100%;
+
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            background-color: black;
+                            
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px) {
+    .landing{
+        .inner{
+            flex-direction: column-reverse;
+            gap: 10px;
+
+            .landing_left{
+                width: 100%;
+                h1{
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+
+                .btn{
+                    justify-content: center;
+                    
+                }
+            }
+            .landing_right{
+                width: 100%;
+                padding: 20px 0;
+            }
+        }
+    }
+    
+}

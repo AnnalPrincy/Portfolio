@@ -1,0 +1,124 @@
+.skill{
+    
+    background-color: rgb(23, 20, 20);
+    padding: 50px 0;
+   .inner{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding:62px 20px;
+
+
+     .top{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+
+        h1{
+            font-size: 40px;
+            color: crimson;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.6;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .left{
+            transform: rotate(270deg);
+            width: 70px;
+
+            h2{
+                color: white;
+                font-size: 30px;
+                border-bottom: 3px crimson solid;
+            }
+            
+
+        }
+        .right{
+            width: calc(100% - 70px);
+
+            .row1{
+              display: grid;
+              grid-gap: 10px;
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows: 200px 200px;
+              
+                
+              .box{
+                height: 180px;
+                width: 180px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(44, 44, 38);
+
+                img{
+                height: 100px;
+                width: 100px;
+              }
+              }
+            }
+        }
+    }
+   }
+}
+
+
+@media (max-width: 950px) {
+    .right{
+        .row1{
+            grid-template-columns: 1fr 1fr 1fr !important; 
+
+            
+        }
+        .row1 .box:nth-last-child(1){
+            display: none !important;
+        }
+        
+    }
+    
+}
+@media (max-width: 600px) {
+
+      .skill{
+        .bottom{
+            flex-direction: column;
+            gap: 20px;
+            .left{
+                transform: rotate(0deg) !important;
+
+            }
+            
+
+            .right{
+                 .row1{
+                   grid-template-columns: 1fr 1fr !important; 
+
+            
+                }
+                .row1 .box:nth-last-child(1){
+                  display: grid !important;
+                }
+        
+    }
+
+        }
+      }
+
+    
+    
+}
